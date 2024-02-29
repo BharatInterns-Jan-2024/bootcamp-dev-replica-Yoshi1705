@@ -1,31 +1,63 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
 const base_url = "https://bootcamp.dev";
-import Markdown from "./markdown.md"
+import Markdown from "./markdown.md";
 import Container from "../components/Container.astro";
 import Module from "./module.md";
-import Imagecontainer from '../components/Imagecontainer.astro';
+import Imagecontainer from "../components/Imagecontainer.astro";
 import Card from "../components/Card.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	 <main class = "h-screen">
-		<Header />
-		<div class="flex justify-center"> <img src=`${base_url}/logos/bootcamp.svg` alt="Bootcamp" class="sm:max-w-xl text-center mx-auto py-10 px-5 lg:max-w-xl mt-0 dark:invert"> </div>
-		<h2 class="text-3xl leading-10 font-semibold uppercase tracking-wider max-w-4xl mx-auto mb-10 text-zinc-800 dark:text-white px-3 text-center">
-		Learn how to build this web app:
-		<img src=`${base_url}/screenshot-light.jpg` class="mx-auto mt-10 rounded-3xl"> 
-	        </h2>
-		<div class = "w-2/4 text-white mx-auto text-left bg-neutral-800 p-10"> 
-		<Markdown />
-		</div>
-		<Container />
-		<div class="relative bg-zinc-50 dark:bg-zinc-800 py-16 sm:py-24 lg:py-32 max-w-3xl mx-auto px-10 mt-10 text-white">
-		<Module />
-		</div>
-		<Imagecontainer />
-		<Card />
-		 
-	 </main>
+  <main class="h-screen">
+    <Header />
+    <div class="flex justify-center">
+      <img
+        src=`${base_url}/logos/bootcamp.svg`
+        alt="Bootcamp"
+        class="sm:max-w-xl text-center mx-auto py-10 px-5 lg:max-w-xl mt-0 dark:invert"
+      />
+    </div>
+    <h2
+      class="text-3xl leading-10 font-semibold uppercase tracking-wider max-w-4xl mx-auto mb-10 text-zinc-800 dark:text-white px-3 text-center"
+    >
+      Learn how to build this web app:
+      <img
+        src=`${base_url}/screenshot-light.jpg`
+        class="mx-auto mt-10 rounded-3xl"
+      />
+    </h2>
+    <div class="w-2/4 text-white mx-auto text-left bg-neutral-800 p-10">
+      <Markdown />
+    </div>
+    <Container
+      title="Signups closed"
+      subtitle="Meet the instructor"
+      content="Hello, I am Flavio Copes. You may know me from my blog, my free programming ebooks on thevalleyofcode.com, or my freeCodeCamp contributions. I have been organizing this Bootcamp every year since 2020. I am 39 years old, Italian. I graduated in computer engineering from Politecnico di Milano in 2008. My passion for computers dates back to the 1980s. I have been a Linux fan since 1998, a Mac enthusiast since 2005, bought my first JavaScript book in 1998, and consider myself a professional JavaScript developer since 2012. Just a few words to let you know I'm serious about these things. My mission is to help you become a Web Developer."
+      link1={{ href: "https://flaviocopes.com", text: "flaviocopes.com" }}
+      link2={{
+        href: "https://thevalleyofcode.com",
+        text: "thevalleyofcode.com",
+      }}
+    />
+    <div
+      class="relative bg-zinc-50 dark:bg-zinc-800 py-16 sm:py-24 lg:py-32 max-w-3xl mx-auto px-10 mt-10 text-white"
+    >
+      <Module />
+    </div>
+
+    <Imagecontainer
+      title="How the app looks like, dark and light mode"
+      images={["screen-1.jpg", "screen-2.jpg", "screen-3.jpg"]}
+      base_url="https://bootcamp.dev"
+    />
+
+    <Imagecontainer
+      title="Did I say the app we'll build looks great as a PWA on a phone/tablet?"
+      images={["ipad.jpg", "iphone.jpg"]}
+      base_url="https://bootcamp.dev"
+    />
+    <Card />
+  </main>
 </Layout>

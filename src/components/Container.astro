@@ -1,36 +1,23 @@
+---
+let { title = '', subtitle = '', content = '', link1 = '', link2 = '' } = Astro.props;
+---
+
 <div class="mt-20">
-  <p
-    class="mt-2 text-5xl font-extrabold text-black dark:text-white mb-20 text-center underline"
-  >
-    Signups closed
+  <p class="mt-2 text-5xl font-extrabold text-black dark:text-white mb-20 text-center underline">
+    {title}
   </p>
 </div>
-<div
-  class="relative text-center pb-20 max-w-xl mx-auto"
->
+<div class="relative text-center pb-20 max-w-xl mx-auto">
   <div class="px-4 sm:px-6 lg:px-8 pt-10 pb-0">
     <div class="text-center">
-      <h2
-        class="text-md leading-6 font-semibold text-zinc-300 uppercase tracking-wider"
-      >
+      <h2 class="text-md leading-6 font-semibold text-zinc-300 uppercase tracking-wider">
         The Instructor
       </h2>
-      <p class="mt-2 text-2xl font-extrabold text-white">Meet the instructor</p>
+      <p class="mt-2 text-2xl font-extrabold text-white">{subtitle}</p>
       <p class="mt-3 max-w-3xl mx-auto text-xl text-zinc-300 sm:mt-5">
-        Hello, I am Flavio Copes. You may know me from my blog
-        <a class="underline" href="https://flaviocopes.com">flaviocopes.com</a> ,
-        my free programming ebooks on <a
-          class="underline"
-          href="https://thevalleyofcode.com">thevalleyofcode.com</a
-        >, or my freeCodeCamp contributions. I have been organizing this
-        Bootcamp every year since 2020. I am 39 years old, Italian. I graduated
-        in computer engineering from Politecnico di Milano in 2008. My passion
-        for computers dates back to the 1980s. I have been a Linux fan since
-        1998, a Mac enthusiast since 2005, bought my first JavaScript book in
-        1998, and consider myself a professional JavaScript developer since
-        2012. <br /><br />Just a few words to let you know I'm serious about
-        these things. <br /><br />My mission is to help you become a Web
-        Developer.
+        {content}
+        <a class="underline" href={link1.href}>{link1.text}</a> ,
+        <a class="underline" href={link2.href}>{link2.text}</a>
       </p>
     </div>
   </div>
