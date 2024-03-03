@@ -1,12 +1,11 @@
 ---
-let { title = '', images = [], base_url = '' } = Astro.props;
+let { text = [], images = []} = Astro.props;
 ---
-
-<div class="mt-20 text-3xl leading-10 font-semibold tracking-wider max-w-7xl mx-auto mb-10 text-zinc-800 dark:text-white px-3 text-center">
-  {title}
-  <div class="grid gap-4 items-center">
-    {images.map(image => (
-      <img loading="lazy" src={`${base_url}/${image}`} class="mx-auto mt-10" />
-    ))}
-  </div>
+<div class="mt-20 grid grid-cols-3 gap-2   mb-10   dark:text-white ">
+  {images.map((image, index) => (
+    <div   class="mx-auto mt-10 w-50 ">
+      <img loading="lazy" src={image} class="max-w-xs" />
+      <p class=" dark:text-white   mt-3">{text[index]}</p>
+    </div>
+  ))}
 </div>

@@ -1,5 +1,7 @@
 ---
 let { title = '', subtitle = '', content = '', link1 = '', link2 = '' } = Astro.props;
+import pic from './Images/pic.png';
+let imgUrl = pic.src;
 ---
 
 <div class="mt-20">
@@ -7,6 +9,7 @@ let { title = '', subtitle = '', content = '', link1 = '', link2 = '' } = Astro.
     {title}
   </p>
 </div>
+<img src = {imgUrl} class="mx-auto rounded-full w-60" alt="instructor" />
 <div class="relative text-center pb-20 max-w-xl mx-auto">
   <div class="px-4 sm:px-6 lg:px-8 pt-10 pb-0">
     <div class="text-center">
@@ -19,6 +22,6 @@ let { title = '', subtitle = '', content = '', link1 = '', link2 = '' } = Astro.
         <a class="underline" href={link1.href}>{link1.text}</a> ,
         <a class="underline" href={link2.href}>{link2.text}</a>
       </p>
-    </div>
+     </div>
   </div>
 </div>

@@ -1,125 +1,133 @@
-<p class="text-center mt-2 text-4xl uppercase font-extrabold text-zinc-900 dark:text-white tracking-tight">
+<p class="text-center   text-4xl uppercase font-extrabold text-zinc-900 dark:text-white tracking-tight">
 The schedule
 </p>
 <pre>          
-                     Each week we'll unlock a new module
+                     Each week we'll unlock different modules
 </pre>                
 <br/>
 <br/>
 
-<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white"> Module 1 </h3>
+<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight  flex justify-center dark:text-white"> Week 1 </h3>
 <br/>
 
-<pre>In this module we define and plan our application, understanding the problem, 
-the architecture we'll need, the tech choices. We'll introduce and install 
-PocketBase locally, and we'll start doing some initial data modeling for our 
-app, creating collections.</pre>
+<h4 class="mt-4 text-2xl   tracking-tight    dark:text-white"> Module 1: Beginner Typing Exercises </h4>
 <br/>
 
-<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white"> Module 2 </h3>
+<pre>Module 1 focuses on honing your typing skills through beginner exercises. 
+This module serves as a foundational step in your coding journey, ensuring 
+you have the necessary typing proficiency to excel in programming.</pre>
 <br/>
-<pre>We'll introduce Astro, we'll create our Astro-based website, with a Git 
-repository so we can easily track progress. We'll then create our homepage, 
-blog, etc, for the site part. We'll use Tailwind to build a layout that is 
-responsive and handles dark and bright mode. We'll learn how to use Astro 
-components to compose the HTML, server side, using JavaScript imports. 
-We'll also learn how to create dynamic routes and how to use content collections 
-to build the product blog. Finally, we'll push the site to GitHub.</pre>
+
+<h4 class="mt-4 text-2xl  tracking-tight    dark:text-white"> Module 2: Coding Using Operators </h4>
 <br/>
-<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white"> Module 3 </h3>
-<br/>
-<pre>In module 3 we'll start working on the app part of our SaaS. We'll create a 
-dashboard and we'll start fetching data from PocketBase and we'll show it in 
-the app. We'll add a way to create a new project using a modal window. We'll 
-introduce htmx and Alpine.js and I'll show you how to use them to perform actions 
-and make our app dynamic. We'll let people add a task to the project, and we'll 
-list the projects tasks.</pre>
-<br/>
-<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white"> Module 4 </h3>
-<br/>
+
 <pre>
-In module 4 we'll first add a sidebar that lists all projects, with a 
-hamburger menu to show it on mobile too. We'll use htmx's `hx-boost` feature to 
-make the app feel faster. Then we'll add a way to mark tasks as done, edit the 
-project status, edit the project's name, and edit the task text. We'll also add 
-a way to delete a project and a task. We'll add the ability to star a task, and 
-we'll then show starred tasks coming form all projects in the dashboard.
+In Module 2, we delve into the fundamentals of coding using operators. 
+You'll learn how to manipulate data and perform various operations using 
+operators, setting the stage for more advanced programming concepts.
 </pre>
 <br/>
-<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white"> Module 5 </h3>
+<h4 class="mt-4 text-2xl   tracking-tight    dark:text-white"> Module 3: Basic Commands in C </h4>
 <br/>
 <pre>
-In module 5 we'll introduce authentication to our app. We'll protect all routes 
-that require auth, and we'll start creating user-specific data. All projects, 
-tasks, etc, will be associated with a user. We'll also add forms to sign up and 
-sign in, and reset the password. We'll let people logout too. We'll add form 
-protection using Cloudflare Turnstile.
+Module 3 introduces you to the basic commands in the C programming language. 
+You'll familiarize yourself with essential commands and syntax, laying the 
+groundwork for building your programming skills.
 </pre>
 <br/>
-<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white"> Module 6 </h3>
+<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight  flex justify-center dark:text-white"> Week 2 </h3>
 <br/>
+
+<h4 class="mt-4 text-3xl tracking-tight    dark:text-white"> Module 1: Relational Operators </h4>
+<br/>
+
 <pre>
-In module 6 we'll make it possible to upload images to a task via drag and drop, 
-and we'll let users delete them too. We'll also take care of security across our 
-app, talk about XSS, introduce a Content Security Policy. We'll then introduce 
-some error handling across our requests.
+Module 1 of Week 2 explores relational operators, which are fundamental 
+for making decisions in your code. You'll learn how to compare values and 
+control program flow based on these comparisons.
 </pre>
 <br/>
-<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white"> Module 7 </h3>
 <br/>
+<h4 class="mt-4 text-3xl  tracking-tight    dark:text-white"> Module 2: Conditional Statements </h4>
+<br/>
+
 <pre>
-In module 7 we'll handle showing starred tasks before non-starred ones from 
-PocketBase, we'll handle resource not found issues, we'll see how to handle htmx 
-connection errors, we'll add some more security checks by setting htmx to only 
-allow requests to our domain and using the correct headers and origin to prevent 
-possible abuse.
+Module 2 dives into conditional statements, essential for creating 
+decision-making structures in your code. You'll master if-else statements, 
+enabling your programs to execute different actions based on specified 
+conditions.
 </pre>
 <br/>
-<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white"> Module 8 </h3>
+
+<h4 class="mt-4 text-3xl   tracking-tight    dark:text-white"> Module 3: Functions </h4>
 <br/>
+
 <pre>
-In module 8 we'll create teams. We'll create the teams collection in PocketBase, 
-show a form to let people create a team, we'll show teams in the sidebar, we'll 
-allow people to activate a team by paying the subscription on Stripe, we'll add 
-projects to the team, list team projects, list starred team tasks, we'll also list 
-team projects in the sidebar, and do some work on the sidebar to highlight the 
-active project and team.
+Module 3 focuses on functions, the building blocks of any program. 
+You'll learn how to define, declare, and call functions, enabling code 
+reuse and modular programming practices.
 </pre>
 <br/>
-<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white"> Module 9 </h3>
+<br/>
+<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight  flex justify-center dark:text-white"> Week 3 </h3>
+<br/>
+
+<h4 class="mt-4 text-3xl   tracking-tight    dark:text-white"> Module 1: Arrays </h4>
+<br/>
+
 <pre>
-In module 9 we'll keep working on teams. We'll add invites, we'll list team 
-members,s we'll handle accepting/rejecting invites, we'll send emails through 
-PocketBase, we'll handle changing a team name, subscription cancellation, we'll 
-freeze the projects if people stop paying, and we'll add a link to manage the 
-subscription on Stripe to update payment method. We'll also handle team deletion 
-and clearing the data.
+Module 1 of Week 3 focuses on arrays, a fundamental data structure 
+in programming. You'll learn how to declare, initialize, and manipulate 
+arrays, enabling you to efficiently store and access collections of data.
 </pre>
 <br/>
-<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white"> Module 10 </h3>
+
+<h4 class="mt-4 text-3xl   tracking-tight    dark:text-white"> Module 2: System Internals </h4>
 <br/>
+
 <pre>
-In module 10 we'll create an activity page where people can see what happened 
-in their projects, and we'll create a team dashboard where people can see what 
-happened in their team projects at a glance. We'll add a way for people to change 
-their username, and in the filters list we will add a way to filter by user, by 
-team, by project. We also show tasks done today in the personal/team dashboard, 
-we'll do some optimizations and we'll add a service worker to show a offline 
-splash screen. We'll also allow the app to be installed as PWA.
+Module 2 delves into system internals, providing insights into how 
+computer systems operate at a low level. You'll explore topics such as 
+memory management, process execution, and system architecture.
 </pre>
 <br/>
-<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white"> Module 11 </h3>
+
+<h4 class="mt-4 text-3xl   tracking-tight    dark:text-white"> Module 3: Login with OTP </h4>
 <br/>
+
 <pre>
-In module 11 we'll take care of caching and performance. We'll prevent 2 
-roundtrips with HX-Redirect, we'll optimize creating a project and task, 
-we'll prevent double click of the buttons, we'll cache modals, we'll cache assets, 
-we'll add loading spinners.
+Module 3 introduces the concept of One-Time Password (OTP) authentication, 
+a secure method for user verification. You'll learn how to implement 
+OTP-based login systems to enhance the security of your applications.
 </pre>
 <br/>
-<h3 class="mt-4 text-3xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white"> Module 12 </h3>
+
+<h4 class="mt-4 text-3xl   tracking-tight    dark:text-white"> Module 4: Random Numbers </h4>
 <br/>
+
 <pre>
-Module 12 is about deployment. We'll deploy our app to Railway using Docker, and 
-we'll handle all we need to go from local dev mode to production.
+Module 4 explores the generation and use of random numbers in programming. 
+You'll understand the importance of randomness in various applications 
+and learn how to generate and manipulate random numbers in your code.
 </pre>
+<br/>
+
+<h4 class="mt-4 text-3xl  tracking-tight    dark:text-white"> Module 5: RGB, Image Matrix </h4>
+<br/>
+
+<pre>
+Module 5 delves into color representation using RGB values and image 
+matrices. You'll learn how computers process and manipulate images 
+using RGB color channels and matrix operations.
+</pre>
+<br/>
+
+<h4 class="mt-4 text-3xl   tracking-tight    dark:text-white"> Module 6: Binary Format </h4>
+<br/>
+
+<pre>
+Module 6 covers binary formats, providing insights into how data is 
+represented and stored in binary form. You'll understand the binary 
+numbering system and learn how to work with binary data in your programs.
+</pre>
+<br/>
