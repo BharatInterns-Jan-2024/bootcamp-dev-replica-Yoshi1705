@@ -16,30 +16,30 @@ import cse from "../components/Images/BE-Computer-Science.png";
 import course from "../components/Images/coursecompletion.jpg";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to CodingBridge.">
   <main class="h-screen">
     <Header />
     <div class="flex justify-center">
       <img
         src={img.src}
         alt="Bootcamp"
-        class="sm:max-w-xl text-center mx-auto py-10 px-5 lg:max-w-xl mt-0 dark:invert"
+        class="sm:max-w-xl mx-auto lg:max-w-xl mt-0 dark:invert"
       />
     </div>
     //purpose
     <h2
-      class="text-xl tracking-wider max-w-4xl mx-auto mb-10 text-zinc-800 dark:text-white px-3 text-center"
+      class="text-xl tracking-wider max-w-4xl mx-auto mb-10 dark:text-white text-center"
     >
       To equip 1st Year Engineering students with the foundational knowledge of
       Computer Science and coding skills, taught using C Language constructs.
     </h2>
-  //course content
+    //course content
     <div
       class="w-2/3 md:w-2/4 text-white mx-auto text-left bg-neutral-800 p-10"
     >
       <Markdown />
     </div>
-  //about instructor
+    //about instructor
     <Container
       title="Meet the Instructor"
       subtitle="Rohini Kumar Barla"
@@ -50,7 +50,7 @@ import course from "../components/Images/coursecompletion.jpg";
       }}
     />
     <div
-      class="relative bg-zinc-50 dark:bg-zinc-800 py-16 sm:py-24 lg:py-20 max-w-3xl mx-auto px-10 mt-10 text-white"
+      class="bg-zinc-50 dark:bg-zinc-800 py-16 sm:py-24 lg:py-20 max-w-3xl mx-auto px-10 mt-10 text-white"
     >
       <Module />
     </div>
@@ -71,36 +71,89 @@ import course from "../components/Images/coursecompletion.jpg";
       ]}
     />
 
-    //Register 
-    <h2 class="text-2xl font-semibold text-white mb-8 flex justify-center">Register Here</h2>
+    //Register
+    <h2 class="text-2xl font-semibold text-white mb-8 flex justify-center">
+      Register Here
+    </h2>
     <div class="max-w-md mx-auto p-6 bg-gray-100 rounded-md shadow-md">
-       <form action="/register" method="post">
+      <form action="/register" method="post">
         <div class="mb-4">
-          <label for="fullName" class="block text-sm font-medium text-gray-700">Full Name</label>
-          <input type="text" name="fullName" id="fullName" placeholder="Enter your full name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          <label for="fullName" class="block text-sm font-medium text-gray-700"
+            >Full Name</label
+          >
+          <input
+            type="text"
+            name="fullName"
+            id="fullName"
+            placeholder="Enter your full name"
+            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+          />
         </div>
         <div class="mb-4">
-          <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-          <input type="email" name="email" id="email" placeholder="Enter your email address" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          <label for="email" class="block text-sm font-medium text-gray-700"
+            >Email Address</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+          />
         </div>
         <div class="mb-4">
-          <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
-          <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          <label for="phone" class="block text-sm font-medium text-gray-700"
+            >Phone Number</label
+          >
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Enter your phone number"
+            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+          />
         </div>
         <div class="mb-4">
-          <label for="education" class="block text-sm font-medium text-gray-700">Education Background</label>
-          <input type="text" name="education" id="education" placeholder="Enter your education background" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+          <label for="education" class="block text-sm font-medium text-gray-700"
+            >Education Background</label
+          >
+          <input
+            type="text"
+            name="education"
+            id="education"
+            placeholder="Enter your education background"
+            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+          />
         </div>
         <div class="mb-4">
-          <label for="experience" class="block text-sm font-medium text-gray-700">Work Experience (if any)</label>
-          <textarea name="experience" id="experience" rows="3" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="Enter your work experience"></textarea>
+          <label
+            for="experience"
+            class="block text-sm font-medium text-gray-700"
+            >Work Experience (if any)</label
+          >
+          <textarea
+            name="experience"
+            id="experience"
+            rows="3"
+            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+            placeholder="Enter your work experience"></textarea>
         </div>
         <div class="mb-4">
-          <label for="message" class="block text-sm font-medium text-gray-700">Message (if any)</label>
-          <textarea name="message" id="message" rows="3" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md" placeholder="Enter your message"></textarea>
+          <label for="message" class="block text-sm font-medium text-gray-700"
+            >Message (if any)</label
+          >
+          <textarea
+            name="message"
+            id="message"
+            rows="3"
+            class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+            placeholder="Enter your message"></textarea>
         </div>
         <div class="flex items-center justify-center">
-          <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          <button
+            type="submit"
+            class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
             Register
           </button>
         </div>
@@ -109,11 +162,11 @@ import course from "../components/Images/coursecompletion.jpg";
 
     //testimonals
     <p
-      class="text-center mt-40 mb-20 text-3xl font-extrabold text-zinc-900 dark:text-white tracking-tight px-20"
+      class="text-center mt-40 mb-20 text-3xl font-extrabold text-zinc-900 dark:text-white tracking-tight  "
     >
       Hear what students say
     </p>
-    <div class="grid lg:grid-cols-3 gap-8 mx-auto">
+    <div class="grid lg:grid-cols-3 gap-8 mx-auto w-11/12">
       <Card
         quote="The coding bridge course was transformative for me. It provided me with the necessary skills to excel in software development, allowing me to build modern applications with confidence. I highly recommend it!"
         author="Victor Campos"
@@ -268,7 +321,7 @@ import course from "../components/Images/coursecompletion.jpg";
       Frequently asked questions
     </h2>
 
-    <div class="grid lg:grid-cols-3 gap-8 mx-auto">
+    <div class="grid lg:grid-cols-3 gap-8 mx-auto w-11/12">
       <SecondCard
         title="Who is this bootcamp for?"
         text="Too many tutorials and little action? This bootcamp is perfect for you. Web development looks complex to you? This bootcamp is perfect for you. You're a frontend dev and you want to get more fullstack/backend skills? This bootcamp is great for you. You're a backend dev and you want to get more frontend skills? This bootcamp is great for you."
@@ -328,15 +381,12 @@ import course from "../components/Images/coursecompletion.jpg";
     </div>
 
     <p
-      class="mt-20 max-w-4xl mx-auto text-xl flex justify-center text-zinc-900 dark:text-zinc-300"
+      class="mt-20 max-w-4xl mx-auto text-xl flex justify-center mb-20 text-zinc-900 dark:text-zinc-300"
     >
       Questions? <a href="mailto:flavio@flaviocopes.com" class="underline">
         Email me</a
       >!
     </p>
-    <br />
-    <br />
-    <br />
     <div class="mb-20">
       <p class="text-center text-zinc-400">© CODING BRIDGE</p>
     </div>
