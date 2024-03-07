@@ -4,7 +4,6 @@ import Header from "../components/Header.astro";
 import Markdown from "./markdown.md";
 import Container from "../components/Container.astro";
 import Module from "./module.md";
-const base_url = "https://bootcamp.dev";
 import Imagecontainer from "../components/Imagecontainer.astro";
 import Card from "../components/Card.astro";
 import SecondCard from "../components/SecondCard.astro";
@@ -19,13 +18,16 @@ import course from "../components/Images/coursecompletion.jpg";
 <Layout title="Welcome to CodingBridge.">
   <main class="h-screen">
     <Header />
+
+    //svg
     <div class="flex justify-center">
       <img
         src={img.src}
         alt="Bootcamp"
-        class="sm:max-w-xl mx-auto lg:max-w-xl mt-0 dark:invert"
+        class="sm:max-w-xl mx-auto lg:max-w-xl  dark:invert"
       />
     </div>
+
     //purpose
     <h2
       class="text-xl tracking-wider max-w-4xl mx-auto mb-10 dark:text-white text-center"
@@ -33,12 +35,14 @@ import course from "../components/Images/coursecompletion.jpg";
       To equip 1st Year Engineering students with the foundational knowledge of
       Computer Science and coding skills, taught using C Language constructs.
     </h2>
+
     //course content
     <div
       class="w-2/3 md:w-2/4 text-white mx-auto text-left bg-neutral-800 p-10"
     >
       <Markdown />
     </div>
+
     //about instructor
     <Container
       title="Meet the Instructor"
@@ -49,15 +53,18 @@ import course from "../components/Images/coursecompletion.jpg";
         text: "Know more about me",
       }}
     />
+
     <div
       class="bg-zinc-50 dark:bg-zinc-800 py-16 sm:py-24 lg:py-20 max-w-3xl mx-auto px-10 mt-10 text-white"
     >
       <Module />
     </div>
+
     //outcomes
     <p class="mt-20 text-2xl font-extrabold text-white flex justify-center">
       Course Outcomes
     </p>
+
     <Imagecontainer
       title="Course Outcomes"
       images={[image.src, software.src, cse.src, ai.src, course.src]}
@@ -297,6 +304,7 @@ import course from "../components/Images/coursecompletion.jpg";
         author="Jeff – Toronto, Canada"
       />
     </div>
+
     //tweet
     <div class="flex justify-center mt-20 mb-10 haha">
       <blockquote class="twitter-tweet">
@@ -379,7 +387,8 @@ import course from "../components/Images/coursecompletion.jpg";
         text="I (Flavio Copes) built the entire curriculum, lessons and projects. I will unlock access to a new lessons module each week. It's not like in school where I'll have lectures. Instead, you find the lessons on a web page and you go through each lesson on your own. The content will be text based. The particular thing about the bootcamp cohort is that you're studying privately, but you're not on your own. You'll have other students you can talk to, ask questions, help each other. All of them are doing the same things you're doing now. And I (the instructor) will be in the Discord chat as much as possible to help everyone during the bootcamp, so that no one gets left behind and we can all complete the course successfully"
       />
     </div>
-
+    
+// footer 
     <p
       class="mt-20 max-w-4xl mx-auto text-xl flex justify-center mb-20 text-zinc-900 dark:text-zinc-300"
     >

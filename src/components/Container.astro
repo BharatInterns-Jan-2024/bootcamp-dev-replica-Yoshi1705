@@ -1,5 +1,5 @@
 ---
-let { title = '', subtitle = '', content = '', link1 = ''} = Astro.props;
+let { title = '', subtitle = '', content = '', link = ''} = Astro.props;
 import pic from './Images/pic.png';
 let imgUrl = pic.src;
 ---
@@ -13,13 +13,13 @@ let imgUrl = pic.src;
 <div class="text-center pb-20 max-w-xl mx-auto">
   <div class="px-4 sm:px-6 lg:px-8 pt-10 pb-0">
     <div class="text-center">
-      <h2 class="text-md leading-6 font-semibold text-zinc-300 uppercase tracking-wider">
+      <h2 class="text-md font-semibold text-zinc-300 uppercase tracking-wider">
         The Instructor
       </h2>
       <p class="mt-2 text-2xl font-extrabold text-white">{subtitle}</p>
       <p class="mt-3 max-w-3xl mx-auto text-xl text-zinc-300 sm:mt-5">
         {content}
-        <a class="underline" href={link1.href}>{link1.text}</a>.
+        <a class="underline" href={link.href}>{link.text}</a>.
        </p>
      </div>
   </div>
