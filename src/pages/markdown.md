@@ -1,4 +1,4 @@
-<div class="text-base leading-7 semi-bold mb-10">
+<div class=" text-xl md:text-base leading-7 semi-bold mb-10">
     <pre>The CodingBridge Course is a 12-weeks long </pre>
     <pre>intensive program focused on</pre>
     <pre>teaching the foundations of Computer Science and 
